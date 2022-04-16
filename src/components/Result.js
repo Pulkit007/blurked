@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import AceEditor from 'react-ace';
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -6,8 +6,12 @@ import ContentCopyOutlinedIcon from '@mui/icons-material/ContentCopyOutlined';
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 
-const Result = () => {
-    const [body, setBody] = useState('');
+const Result = (props) => {
+    const {result} = props;
+    const [body, setBody] = useState(result);
+    useEffect(() => {
+        setBody(result)
+    }, [result])
     return (
         <div className='inputRegion'>
             <div className='editorMenu'>

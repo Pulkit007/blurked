@@ -1,0 +1,77 @@
+.editorMenu {
+  background-color: #727272;
+  width: 100%;
+  height: 35px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-bottom: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.editorMenus {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menuActions {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: #727272;
+}
+
+.menuAction {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.editorMenus h2 {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  margin-left: 10px;
+}
+
+.optionList {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px;
+}
+
+.option {
+  margin: 5px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.option label {
+  margin-left: 5px;
+}
+
+.submit-btn {
+  margin: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #00d1b2;
+  border-color: transparent;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+  border: none;
+}
+
+.submit-btn:hover {
+  background-color: #fff;
+  color: #628b85;
+  border: 2px solid;
+  border-color: #00d1b2;
+}
